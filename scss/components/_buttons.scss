@@ -1,0 +1,15 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/functions' as func;
+@use '../abstracts/mixins' as mix;
+
+.btn--icon {
+	@include mix.justify-content(center);
+	@include mix.align-items(center);
+	width: func.em(30, var.$font-size-primary);
+	height: func.em(30, var.$font-size-primary);
+	@include mix.box-shadow(none);
+}
+
+[class^='link-'] {
+	text-decoration: none;
+}
