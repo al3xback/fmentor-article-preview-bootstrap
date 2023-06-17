@@ -1,7 +1,7 @@
 {
 	"name": "fmentor-article-preview-bootstrap",
 	"version": "1.0.0",
-	"description": "article preview project with bootstrap 5",
+	"description": "article preview component with bootstrap 5",
 	"main": "index.js",
 	"scripts": {
 		"dev": "sass --watch scss/main.scss css/main.css",
