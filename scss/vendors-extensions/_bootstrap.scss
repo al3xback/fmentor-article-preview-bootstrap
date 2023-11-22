@@ -63,7 +63,7 @@ p:last-child {
 	--bs-btn-border-color: transparent;
 	--bs-btn-border-radius: 50%;
 	--bs-btn-color: #{var.$color-desaturated-dark-blue};
-	@include mix.inline-flexbox;
+	display: inline-flex;
 }
 
 .link-primary {
@@ -77,7 +77,7 @@ p:last-child {
 
 @media (min-width: 60em) {
 	.card {
-		@include mix.flex-direction(row);
+		flex-direction: row;
 	}
 
 	.card-title {

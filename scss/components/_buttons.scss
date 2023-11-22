@@ -3,11 +3,11 @@
 @use '../abstracts/mixins' as mix;
 
 .btn--icon {
-	@include mix.justify-content(center);
-	@include mix.align-items(center);
+	justify-content: center;
+	align-items: center;
 	width: func.em(30, var.$font-size-primary);
 	height: func.em(30, var.$font-size-primary);
-	@include mix.box-shadow(none);
+	box-shadow: none;
 }
 
 [class^='link-'] {

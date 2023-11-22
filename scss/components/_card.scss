@@ -7,15 +7,13 @@
 	max-width: func.em(320, var.$font-size-primary);
 	margin: func.em(40, var.$font-size-primary) 0
 		func.em(60, var.$font-size-primary);
-	@include mix.box-shadow(
-		0 func.em(16, var.$font-size-primary)
-			func.em(30, var.$font-size-primary) rgba(0, 0, 0, 0.04)
-	);
+	box-shadow: 0 func.em(16, var.$font-size-primary)
+		func.em(30, var.$font-size-primary) rgba(0, 0, 0, 0.04);
 }
 
 .card-image,
 .card-image * {
-	@include mix.border-radius(inherit);
+	border-radius: inherit;
 }
 
 .card-image {
@@ -45,7 +43,7 @@
 .card-author-img {
 	width: func.em(40, var.$font-size-primary);
 	height: auto;
-	@include mix.border-radius(50%);
+	border-radius: 50%;
 }
 
 .card-author-name {
@@ -61,8 +59,8 @@
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	@include mix.flexbox;
-	@include mix.flex-direction(column);
+	display: flex;
+	flex-direction: column;
 	width: 100%;
 }
 
@@ -75,12 +73,12 @@
 
 .card-share-box {
 	position: relative;
-	@include mix.flexbox;
-	@include mix.justify-content(flex-end);
+	display: flex;
+	justify-content: flex-end;
 	padding: func.em(24, var.$font-size-primary)
 		func.em(32, var.$font-size-primary);
 	background-color: transparent;
-	@include mix.transition(all 0.24s);
+	transition: all 0.24s;
 }
 
 .card-share-action {
@@ -130,13 +128,13 @@
 	}
 
 	.card-header {
-		@include mix.flex-shrink(0);
-		@include mix.flex-basis(func.em(280, var.$font-size-primary));
+		flex-shrink: 0;
+		flex-basis: func.em(280, var.$font-size-primary);
 		max-width: func.em(280, var.$font-size-primary);
 	}
 
 	.card-image {
-		@include mix.flex(auto);
+		flex: auto;
 	}
 
 	.card-title {
@@ -151,11 +149,9 @@
 		padding: func.em(16, var.$font-size-primary)
 			func.em(32, var.$font-size-primary);
 		background-color: var.$color-dark-grayish-blue;
-		@include mix.border-radius(10px);
-		@include mix.box-shadow(
-			0 func.em(8, var.$font-size-primary)
-				func.em(16, var.$font-size-primary) rgba(0, 0, 0, 0.16)
-		);
+		border-radius: 10px;
+		box-shadow: 0 func.em(8, var.$font-size-primary)
+			func.em(16, var.$font-size-primary) rgba(0, 0, 0, 0.16);
 	}
 
 	.card-share-action::before {
@@ -166,7 +162,7 @@
 		width: func.em(15, var.$font-size-primary);
 		height: func.em(15, var.$font-size-primary);
 		background-color: inherit;
-		@include mix.transform(translateX(-50%) rotate(45deg));
+		transform: translateX(-50%) rotate(45deg);
 	}
 
 	.card-share-checkbox:checked + .card-share-box {
