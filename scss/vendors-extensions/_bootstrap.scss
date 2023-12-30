@@ -71,6 +71,7 @@ p:last-child {
 
 .link-primary:hover,
 .link-primary:focus {
+	text-decoration: underline;
 	color: #{var.$color-dark-grayish-blue} !important;
 }
 
